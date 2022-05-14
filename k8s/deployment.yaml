@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wawa
+  name: hyjy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wawa
+      app: hyjy
   template:
     metadata:
       labels:
-        app: wawa
+        app: hyjy
     spec:
       containers:
-      - image: okteto.dev/wawa:latest
-        name: wawa
+      - image: okteto.dev/hyjy:latest
+        name: hyjy
         ports:
         - containerPort: 8080
         env:
